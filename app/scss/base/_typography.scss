@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'segoe-light', sans-serif;
+	src: url('./fonts/Light.woff') format('woff');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'segoe-regular', sans-serif;
+	src: url('./fonts/Regular.woff') format('woff');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'segoe-bold', sans-serif;
+	src: url('./fonts/Bold.woff') format('woff');
+	font-style: normal;
+}
+
+$text-light: 'segoe-light';
+$text-bold: 'segoe-bold';
+$text-regular: 'segoe-regular';
