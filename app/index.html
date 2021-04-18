@@ -54,17 +54,38 @@
 		<main class="main">
 			<section class="hero">
 				<div class="wrapper">
-					<div class="hero__image">
-						<img
-							src="./assets/images/iphones-final_2017-01-25/iphones-final.png"
-							alt=""
-							class="image"
+					<picture class="hero__image--desktop">
+						<source
+							media="(min-width: 1400px)"
+							srcset="
+								./assets/images/iphones-final_2017-01-25/iphones-final@3x.png 3x,
+								./assets/images/iphones-final_2017-01-25/iphones-final@2x.png 2x
+							"
 						/>
-					</div>
+
+						<img
+							src="./assets/images//iphones-final_2017-01-25/iphones-final.png"
+							alt="a head carved out of wood"
+						/>
+					</picture>
+
 					<div class="hero__text">
 						<h1 class="hero__logo">
-							<img src="./assets/images/logo.png" alt="" />
+							<img src="./assets/images/contoso.svg" alt="" />
 						</h1>
+						<picture class="hero__image--mobile">
+							<source
+								media="(min-width: 320px)"
+								srcset="
+									./assets/images/phones-mobile_2017-01-25/phones-mobile@3x.png 3x,
+									./assets/images/phones-mobile_2017-01-25/phones-mobile@2x.png 2x
+								"
+							/>
+							<img
+								src="./assets/images//iphones-final_2017-01-25/iphones-final.png"
+								alt="a head carved out of wood"
+							/>
+						</picture>
 						<p class="hero__title">
 							Curabitur lobortis id lorem id bibendum ut id
 							consectetur.
@@ -73,21 +94,24 @@
 							Vestibulum rutrum quam vitae fringilla tincidunt
 							amet suspendisse nec tortor
 						</p>
-						<div class="hero__cta">
-							<input type="text" />
-							<button>send</button>
-						</div>
+						<form class="hero__cta" action="" method="post">
+							<!-- <label for="email">E-mail:</label> -->
+							<input
+								class="email"
+								type="email"
+								id="email"
+								name="o365_email"
+								placeholder="Your O365 email"
+								required
+								pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$"
+							/>
+							<button class="send" type="button">SEND</button>
+						</form>
 					</div>
 				</div>
 			</section>
-			<section class="extra">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-				animi quia recusandae obcaecati culpa, unde sapiente sunt,
-				numquam perspiciatis id expedita, atque illo incidunt.
-				Reiciendis non enim est modi quia!
-			</section>
 		</main>
 
-		<script src="" async defer></script>
+		<script src="./assets/js/app.min.js" async defer></script>
 	</body>
 </html>
