@@ -1,0 +1,29 @@
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 2.5rem;
+	.social {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+		flex-basis: 100%;
+		&__icon {
+			height: 2rem;
+			width: 2rem;
+			margin-left: 0.625rem;
+		}
+		&__svg {
+			fill: $color-white;
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+	}
+	@media screen and (max-width: $bp-s) {
+		display: none;
+	}
+}
