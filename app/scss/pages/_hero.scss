@@ -1,11 +1,10 @@
 .hero {
 	min-height: 100vh;
-
 	margin: 0 auto;
 	background-image: $background-gradient;
 
 	@media screen and (min-width: $bp-l) {
-		min-height: unset;
+		min-height: 0;
 		max-height: 759px;
 		text-align: left;
 	}
