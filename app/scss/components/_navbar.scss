@@ -1,14 +1,12 @@
 .navbar {
-	display: flex;
-	flex-direction: row;
+	@include row;
 	justify-content: space-between;
 	position: fixed;
 	width: 100%;
 	top: 0;
 	padding: 2.5rem;
 	.social {
-		display: flex;
-		flex-direction: row;
+		@include row;
 		align-items: center;
 		justify-content: flex-end;
 		flex-basis: 100%;

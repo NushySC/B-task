@@ -1,10 +1,9 @@
 .wrapper {
+	@include column;
+	justify-content: center;
 	max-width: 1000px;
 	margin: 0rem auto;
 	padding-top: 5rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 
 	@media screen and (min-width: $bp-m) {
 		width: 70%;
