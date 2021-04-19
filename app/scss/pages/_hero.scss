@@ -1,0 +1,141 @@
+.hero {
+	min-height: 100vh;
+
+	margin: 0 auto;
+	background-image: $background-gradient;
+
+	@media screen and (min-width: $bp-l) {
+		min-height: unset;
+		max-height: 760px;
+		text-align: left;
+	}
+	&__logo {
+		text-align: center;
+		margin-bottom: $font-ml;
+		img {
+			max-width: 132px;
+		}
+		@media screen and (min-width: $bp-m) {
+			text-align: left;
+		}
+	}
+
+	&__image {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex: 0 0 40%;
+
+		&--desktop {
+			img {
+				max-width: 30vw;
+			}
+
+			@media screen and (max-width: $bp-m - 1px) {
+				display: none;
+			}
+		}
+		&--mobile {
+			margin-bottom: 2rem;
+			text-align: center;
+			@media screen and (min-width: $bp-m) {
+				display: none;
+			}
+		}
+	}
+	&__text {
+		align-items: flex-start;
+		text-align: center;
+		flex: 0 0 100%;
+		margin-top: 0;
+
+		@media screen and (min-width: $bp-m) {
+			flex: 0 0 60%;
+			margin-left: 3rem;
+			margin-top: 8rem;
+			text-align: left;
+		}
+	}
+	&__title {
+		font-family: $text-light;
+		font-size: $font-xl * 0.5;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.21;
+		letter-spacing: normal;
+		color: $color-white;
+		margin-bottom: 30px;
+		text-align: center;
+		@media screen and (min-width: $bp-m) {
+			font-size: 48px;
+			text-align: left;
+			line-height: 1.42 * 0.8;
+		}
+	}
+	&__subtitle {
+		font-family: $text-regular;
+		font-stretch: normal;
+		font-style: normal;
+		font-size: $font-l;
+		opacity: 0.7;
+		line-height: 1.42;
+		color: #ffffffde;
+		margin-bottom: $font-xl;
+		@media screen and (max-width: $bp-m) {
+			font-size: $font-l * 0.67;
+			line-height: 1.42 * 0.8;
+		}
+	}
+
+	&__cta {
+		display: flex;
+		height: 45px;
+		max-width: 280px;
+		margin: 0 auto;
+
+		@media screen and (min-width: $bp-m) {
+			width: 400px;
+			height: 55px;
+			margin: 0;
+		}
+		.email {
+			display: block;
+			width: 70%;
+			border-top-left-radius: 8px;
+			border-bottom-left-radius: 8px;
+			border: none;
+			outline: none;
+			height: 100%;
+			padding: 0;
+			padding-left: 20px;
+			overflow: hidden;
+			color: $text-subcolor;
+			font-family: $text-regular;
+			font-size: 0.875rem;
+
+			&:focus {
+				background-color: darken($color-white, 10%);
+			}
+
+			@media screen and (min-width: $bp-s) {
+				font-size: 1.25em;
+			}
+		}
+
+		.send {
+			cursor: pointer;
+			border: none;
+			outline: none;
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
+			height: 100%;
+			width: 30%;
+			background-color: $accent-color;
+			color: $color-white;
+			font-family: $text-bold;
+			letter-spacing: 0.175em;
+			font-size: 0.875em;
+			transition: all 1s ease;
+		}
+	}
+}
