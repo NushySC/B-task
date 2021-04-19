@@ -139,6 +139,9 @@
 			letter-spacing: 0.175em;
 			font-size: 0.875em;
 			transition: all 1s ease;
+			&:hover {
+				background: darken($accent-color, 10%);
+			}
 		}
 	}
 }
