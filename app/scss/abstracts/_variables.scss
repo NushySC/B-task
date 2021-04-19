@@ -7,6 +7,13 @@ $background-darkest: rgb(22, 46, 80);
 $background-dark: rgb(48, 68, 139);
 $background-light: rgb(72, 102, 193);
 $background-lightest: rgb(81, 125, 216);
+$background-gradient: linear-gradient(
+	270deg,
+	#62a7ff -50%,
+	#435ab6 25%,
+	#3f51ad 50%,
+	#142d4c 176%
+);
 
 $font-xl: 48px;
 $font-l: 24px;
