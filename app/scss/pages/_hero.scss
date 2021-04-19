@@ -6,14 +6,14 @@
 
 	@media screen and (min-width: $bp-l) {
 		min-height: unset;
-		max-height: 760px;
+		max-height: 759px;
 		text-align: left;
 	}
 	&__logo {
 		text-align: center;
 		margin-bottom: $font-ml;
 		img {
-			max-width: 132px;
+			max-width: 8.25rem;
 		}
 		@media screen and (min-width: $bp-m) {
 			text-align: left;
@@ -64,10 +64,10 @@
 		line-height: 1.21;
 		letter-spacing: normal;
 		color: $color-white;
-		margin-bottom: 30px;
+		margin-bottom: 1.875rem;
 		text-align: center;
 		@media screen and (min-width: $bp-m) {
-			font-size: 48px;
+			font-size: 3rem;
 			text-align: left;
 			line-height: 1.42 * 0.8;
 		}
@@ -90,24 +90,28 @@
 	&__cta {
 		display: flex;
 		height: 45px;
-		max-width: 280px;
+		max-width: 17.5rem;
 		margin: 0 auto;
 
 		@media screen and (min-width: $bp-m) {
-			width: 400px;
+			margin: 0;
+		}
+
+		@media screen and (min-width: $bp-l) {
+			min-width: 25rem;
 			height: 55px;
 			margin: 0;
 		}
 		.email {
 			display: block;
 			width: 70%;
-			border-top-left-radius: 8px;
-			border-bottom-left-radius: 8px;
+			border-top-left-radius: 0.5rem;
+			border-bottom-left-radius: 0.5rem;
 			border: none;
 			outline: none;
 			height: 100%;
 			padding: 0;
-			padding-left: 20px;
+			padding-left: 1.25rem;
 			overflow: hidden;
 			color: $text-subcolor;
 			font-family: $text-regular;
@@ -126,8 +130,8 @@
 			cursor: pointer;
 			border: none;
 			outline: none;
-			border-top-right-radius: 8px;
-			border-bottom-right-radius: 8px;
+			border-top-right-radius: 0.5rem;
+			border-bottom-right-radius: 0.5rem;
 			height: 100%;
 			width: 30%;
 			background-color: $accent-color;
