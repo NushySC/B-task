@@ -1,21 +1,14 @@
 .wrapper {
-	margin: 0 auto;
+	max-width: 1000px;
+	margin: 0rem auto;
+	padding-top: 5rem;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
-	margin-top: -6rem;
-	// flex-basis: 100%;
 
-	//   transition: flex-direction 1s linear, opacity 1s linear;
-	@media screen and(min-width: $bp-m) {
-		display: flex;
+	@media screen and (min-width: $bp-m) {
+		width: 70%;
 		flex-direction: row;
-		align-items: center;
-		max-width: 1000px;
-		margin-top: 6rem;
-	}
-	@media screen and(min-width: $bp-s) {
-		margin-top: 3rem;
+		// padding-top: 8rem;
 	}
 }
